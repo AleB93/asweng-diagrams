@@ -13,7 +13,7 @@
     <inputSchema>
       <schemaAttributes name="DeviceId"/>
       <schemaAttributes name="idMeasure"/>
-      <schemaAttributes name="Coordinates"/>
+      <schemaAttributes name="Coordinates" type="STRING"/>
     </inputSchema>
   </tasks>
   <tasks xsi:type="Data_Analysis:DataIntegrationTask" toFlow="//@flows.2" executionTimestamp="1517224014" isExecuted="true" joinAttributes="//@schemas.0" outAttributes="//@schemas.1"/>
@@ -75,24 +75,32 @@
   <flows toTask="//@tasks.4">
     <collection>
       <documents>
-        <attributes name="Coordinates" type="STRING" value="45.799289699999996, 9.092762"/>
+        <attributes name="Coordinates" type="STRING" value="45.799289699999996,9.092762"/>
         <attributes name="LightIntensity"/>
+        <attributes name="DeviceId" value="1"/>
+        <attributes name="idMeasure" value="1234567"/>
       </documents>
       <documents>
-        <attributes name="Coordinates" type="STRING" value="45.799289699999996, 9.092762"/>
+        <attributes name="Coordinates" type="STRING" value="45.799289699999996,9.092762"/>
         <attributes name="LightIntensity"/>
+        <attributes name="DeviceId" value="2"/>
+        <attributes name="idMeasure" value="1234568"/>
       </documents>
     </collection>
   </flows>
   <flows toTask="//@tasks.5">
     <collection>
       <documents>
-        <attributes name="Coordinates" type="STRING" value="45.799289699999996, 9.092762"/>
+        <attributes name="Coordinates" type="STRING" value="45.799289699999996,9.092762"/>
         <attributes name="LightIntensity" value="5000"/>
+        <attributes name="DeviceId" value="1"/>
+        <attributes name="idMeasure" value="1234567"/>
       </documents>
       <documents>
-        <attributes name="Coordinates" type="STRING" value="45.799289699999996, 9.092762"/>
+        <attributes name="Coordinates" type="STRING" value="45.799289699999996,9.092762"/>
         <attributes name="LightIntensity"/>
+        <attributes name="DeviceId" value="2"/>
+        <attributes name="idMeasure" value="1234568"/>
       </documents>
     </collection>
   </flows>

@@ -28,14 +28,9 @@
             <element xmi:type="Data_Analysis:AttributeSchema" href="default.data_analysis#//@tasks.0/@inputSchema/@schemaAttributes.2"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z2OYAQTmEeimRNHhQ2JDJg" x="10" y="58"/>
           </children>
-          <children xmi:type="notation:Shape" xmi:id="_3xwZcATmEeimRNHhQ2JDJg" type="3005" fontName="Segoe UI">
-            <children xmi:type="notation:DecorationNode" xmi:id="_3xwZcgTmEeimRNHhQ2JDJg" type="5004"/>
-            <element xmi:type="Data_Analysis:AttributeSchema" href="default.data_analysis#//@tasks.0/@inputSchema/@schemaAttributes.3"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3xwZcQTmEeimRNHhQ2JDJg" x="138" y="60"/>
-          </children>
           <children xmi:type="notation:Shape" xmi:id="_8x55kATmEeimRNHhQ2JDJg" type="3005" fontName="Segoe UI">
             <children xmi:type="notation:DecorationNode" xmi:id="_8x6goATmEeimRNHhQ2JDJg" type="5004"/>
-            <element xmi:type="Data_Analysis:AttributeSchema" href="default.data_analysis#//@tasks.0/@inputSchema/@schemaAttributes.4"/>
+            <element xmi:type="Data_Analysis:AttributeSchema" href="default.data_analysis#//@tasks.0/@inputSchema/@schemaAttributes.3"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8x55kQTmEeimRNHhQ2JDJg" x="20" y="108"/>
           </children>
         </children>
@@ -102,11 +97,6 @@
                 <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.0/@collection/@documents.0/@attributes.3"/>
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7nitUQToEeimRNHhQ2JDJg" x="10" y="188" width="86"/>
               </children>
-              <children xmi:type="notation:Shape" xmi:id="_9vf4UAToEeimRNHhQ2JDJg" type="3022" fontName="Segoe UI">
-                <children xmi:type="notation:DecorationNode" xmi:id="_9vgfYAToEeimRNHhQ2JDJg" type="5026"/>
-                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.0/@collection/@documents.0/@attributes.4"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9vf4UQToEeimRNHhQ2JDJg" x="5" y="248"/>
-              </children>
             </children>
             <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_fjbNMQTmEeimRNHhQ2JDJg"/>
             <element xmi:type="Data_Analysis:Document" href="default.data_analysis#//@flows.0/@collection/@documents.0"/>
@@ -134,11 +124,6 @@
                 <children xmi:type="notation:DecorationNode" xmi:id="_pRbcMgTpEeimRNHhQ2JDJg" type="5026"/>
                 <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.0/@collection/@documents.1/@attributes.3"/>
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pRbcMQTpEeimRNHhQ2JDJg" x="10" y="193"/>
-              </children>
-              <children xmi:type="notation:Shape" xmi:id="_p8ekUATpEeimRNHhQ2JDJg" type="3022" fontName="Segoe UI">
-                <children xmi:type="notation:DecorationNode" xmi:id="_p8fLYATpEeimRNHhQ2JDJg" type="5026"/>
-                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.0/@collection/@documents.1/@attributes.4"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_p8ekUQTpEeimRNHhQ2JDJg" y="264"/>
               </children>
             </children>
             <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_yRrKIQToEeimRNHhQ2JDJg"/>
@@ -187,6 +172,16 @@
                 <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.1/@collection/@documents.0/@attributes.1"/>
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3iALkQT5EeiEU_SUUV2M7Q" x="17" y="113" width="89"/>
               </children>
+              <children xmi:type="notation:Shape" xmi:id="_UGFCcAXeEeizFakh2eqbJQ" type="3022" fontName="Segoe UI">
+                <children xmi:type="notation:DecorationNode" xmi:id="_UGFpgAXeEeizFakh2eqbJQ" type="5026"/>
+                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.1/@collection/@documents.0/@attributes.2"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UGFCcQXeEeizFakh2eqbJQ" x="20" y="163"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_V4eNIAXeEeizFakh2eqbJQ" type="3022" fontName="Segoe UI">
+                <children xmi:type="notation:DecorationNode" xmi:id="_V4e0MAXeEeizFakh2eqbJQ" type="5026"/>
+                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.1/@collection/@documents.0/@attributes.3"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V4eNIQXeEeizFakh2eqbJQ" x="25" y="223"/>
+              </children>
             </children>
             <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_wBY50QT5EeiEU_SUUV2M7Q"/>
             <element xmi:type="Data_Analysis:Document" href="default.data_analysis#//@flows.1/@collection/@documents.0"/>
@@ -204,6 +199,16 @@
                 <children xmi:type="notation:DecorationNode" xmi:id="_4Xb-wgT5EeiEU_SUUV2M7Q" type="5026"/>
                 <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.1/@collection/@documents.1/@attributes.1"/>
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4Xb-wQT5EeiEU_SUUV2M7Q" x="24" y="117" width="87"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_pP6i8AXeEeizFakh2eqbJQ" type="3022" fontName="Segoe UI">
+                <children xmi:type="notation:DecorationNode" xmi:id="_pP7KAAXeEeizFakh2eqbJQ" type="5026"/>
+                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.1/@collection/@documents.1/@attributes.2"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pP6i8QXeEeizFakh2eqbJQ" x="20" y="168"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_rh07MAXeEeizFakh2eqbJQ" type="3022" fontName="Segoe UI">
+                <children xmi:type="notation:DecorationNode" xmi:id="_rh1iQAXeEeizFakh2eqbJQ" type="5026"/>
+                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.1/@collection/@documents.1/@attributes.3"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rh07MQXeEeizFakh2eqbJQ" x="42" y="227"/>
               </children>
             </children>
             <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_z_LlEQT5EeiEU_SUUV2M7Q"/>
@@ -257,7 +262,17 @@
               <children xmi:type="notation:Shape" xmi:id="_59ulIAUPEeiCi8viRiRrmg" type="3022" fontName="Segoe UI">
                 <children xmi:type="notation:DecorationNode" xmi:id="_59ulIgUPEeiCi8viRiRrmg" type="5026"/>
                 <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.2/@collection/@documents.0/@attributes.1"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_59ulIQUPEeiCi8viRiRrmg" x="20" y="93"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_59ulIQUPEeiCi8viRiRrmg" x="25" y="73"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_VMgCgAXfEeizFakh2eqbJQ" type="3022" fontName="Segoe UI">
+                <children xmi:type="notation:DecorationNode" xmi:id="_VMgpkAXfEeizFakh2eqbJQ" type="5026"/>
+                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.2/@collection/@documents.0/@attributes.2"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VMgCgQXfEeizFakh2eqbJQ" x="23" y="128"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_V_ygoAXfEeizFakh2eqbJQ" type="3022" fontName="Segoe UI">
+                <children xmi:type="notation:DecorationNode" xmi:id="_V_ygogXfEeizFakh2eqbJQ" type="5026"/>
+                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.2/@collection/@documents.0/@attributes.3"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_ygoQXfEeizFakh2eqbJQ" x="19" y="203"/>
               </children>
             </children>
             <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_hqggkQUJEeiCi8viRiRrmg"/>
@@ -276,6 +291,16 @@
                 <children xmi:type="notation:DecorationNode" xmi:id="_8xSR4gUPEeiCi8viRiRrmg" type="5026"/>
                 <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.2/@collection/@documents.1/@attributes.1"/>
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8xSR4QUPEeiCi8viRiRrmg" x="3" y="93"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_YpYZEAXfEeizFakh2eqbJQ" type="3022" fontName="Segoe UI">
+                <children xmi:type="notation:DecorationNode" xmi:id="_YpYZEgXfEeizFakh2eqbJQ" type="5026"/>
+                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.2/@collection/@documents.1/@attributes.2"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YpYZEQXfEeizFakh2eqbJQ" x="4" y="148"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_ZfBAkAXfEeizFakh2eqbJQ" type="3022" fontName="Segoe UI">
+                <children xmi:type="notation:DecorationNode" xmi:id="_ZfBnoAXfEeizFakh2eqbJQ" type="5026"/>
+                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.2/@collection/@documents.1/@attributes.3"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZfBAkQXfEeizFakh2eqbJQ" x="17" y="219"/>
               </children>
             </children>
             <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_l9CQQQUKEeiCi8viRiRrmg"/>
@@ -341,7 +366,17 @@
               <children xmi:type="notation:Shape" xmi:id="_MsNvcAUOEeiCi8viRiRrmg" type="3022" fontName="Segoe UI">
                 <children xmi:type="notation:DecorationNode" xmi:id="_MsNvcgUOEeiCi8viRiRrmg" type="5026"/>
                 <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.3/@collection/@documents.0/@attributes.1"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MsNvcQUOEeiCi8viRiRrmg" x="30" y="93"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MsNvcQUOEeiCi8viRiRrmg" x="8" y="61"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_enG7wAXfEeizFakh2eqbJQ" type="3022" fontName="Segoe UI">
+                <children xmi:type="notation:DecorationNode" xmi:id="_enHi0AXfEeizFakh2eqbJQ" type="5026"/>
+                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.3/@collection/@documents.0/@attributes.2"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_enG7wQXfEeizFakh2eqbJQ" x="2" y="106"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_fbY4YAXfEeizFakh2eqbJQ" type="3022" fontName="Segoe UI">
+                <children xmi:type="notation:DecorationNode" xmi:id="_fbY4YgXfEeizFakh2eqbJQ" type="5026"/>
+                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.3/@collection/@documents.0/@attributes.3"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fbY4YQXfEeizFakh2eqbJQ" x="10" y="147"/>
               </children>
             </children>
             <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_HAxPkQUOEeiCi8viRiRrmg"/>
@@ -359,7 +394,17 @@
               <children xmi:type="notation:Shape" xmi:id="_NP_K4AUOEeiCi8viRiRrmg" type="3022" fontName="Segoe UI">
                 <children xmi:type="notation:DecorationNode" xmi:id="_NP_K4gUOEeiCi8viRiRrmg" type="5026"/>
                 <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.3/@collection/@documents.1/@attributes.1"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NP_K4QUOEeiCi8viRiRrmg" x="19" y="128"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NP_K4QUOEeiCi8viRiRrmg" x="15" y="69"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_hEYPcAXfEeizFakh2eqbJQ" type="3022" fontName="Segoe UI">
+                <children xmi:type="notation:DecorationNode" xmi:id="_hEYPcgXfEeizFakh2eqbJQ" type="5026"/>
+                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.3/@collection/@documents.1/@attributes.2"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hEYPcQXfEeizFakh2eqbJQ" x="30" y="109"/>
+              </children>
+              <children xmi:type="notation:Shape" xmi:id="_iUfMcAXfEeizFakh2eqbJQ" type="3022" fontName="Segoe UI">
+                <children xmi:type="notation:DecorationNode" xmi:id="_iUfMcgXfEeizFakh2eqbJQ" type="5026"/>
+                <element xmi:type="Data_Analysis:Attribute" href="default.data_analysis#//@flows.3/@collection/@documents.1/@attributes.3"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_iUfMcQXfEeizFakh2eqbJQ" x="10" y="156"/>
               </children>
             </children>
             <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_HQHTIQUOEeiCi8viRiRrmg"/>

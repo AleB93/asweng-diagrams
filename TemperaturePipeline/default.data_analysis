@@ -6,12 +6,11 @@
       <schemaAttributes name="Temperature"/>
       <schemaAttributes name="DeviceId"/>
       <schemaAttributes name="Timestamp"/>
-      <schemaAttributes name="Coordinates"/>
       <schemaAttributes name="Humidity"/>
     </inputSchema>
   </tasks>
   <tasks xsi:type="Data_Analysis:DataCleaning" toFlow="//@flows.1" executionTimestamp="1517224012" isExecuted="true">
-    <operations xsi:type="Data_Analysis:FormatData"/>
+    <operations xsi:type="Data_Analysis:FormatData" type="TimeStampToDate"/>
   </tasks>
   <tasks xsi:type="Data_Analysis:DataAnalysisTask" toFlow="//@flows.2" executionTimestamp="1517224013" isExecuted="true">
     <category xsi:type="Data_Analysis:Classification"/>
@@ -32,26 +31,28 @@
         <attributes name="DeviceId" value="1"/>
         <attributes name="Timestamp" value="1517226288"/>
         <attributes name="Humidity" value="58"/>
-        <attributes name="Coordinates" value="45.6984251, 9.0365349"/>
       </documents>
       <documents>
         <attributes name="Temperature" value="38"/>
         <attributes name="DeviceId" value="2"/>
         <attributes name="Timestamp" value="1517226289"/>
         <attributes name="Humidity" value="12"/>
-        <attributes name="Coordinates" value="45.6984251, 9.0365349"/>
       </documents>
     </collection>
   </flows>
   <flows toTask="//@tasks.2">
     <collection>
       <documents>
-        <attributes name="Timestamp" value="1517226288"/>
+        <attributes name="Timestamp" type="DATE" value="29/1/2018 12:44:48"/>
         <attributes name="Temperature" value="10"/>
+        <attributes name="DeviceId" value="1"/>
+        <attributes name="Humidity" value="58"/>
       </documents>
       <documents>
-        <attributes name="Timestamp" value="1517226289"/>
+        <attributes name="Timestamp" value="29/1/2018 12:44:49"/>
         <attributes name="Temperature" value="38"/>
+        <attributes name="DeviceId" value="2"/>
+        <attributes name="Humidity" value="12"/>
       </documents>
     </collection>
   </flows>
@@ -59,11 +60,15 @@
     <collection>
       <documents>
         <attributes name="Temperature" value="10"/>
-        <attributes name="Timestamp" value="1517226288"/>
+        <attributes name="Timestamp" value="29/1/2018 12:44:48"/>
+        <attributes name="DeviceId" value="1"/>
+        <attributes name="Humidity" value="58"/>
       </documents>
       <documents>
         <attributes name="Temperature" value="38"/>
-        <attributes name="Timestamp" value="1517226289"/>
+        <attributes name="Timestamp" value="29/1/2018 12:44:49"/>
+        <attributes name="DeviceId" value="2"/>
+        <attributes name="Humidity" value="12"/>
       </documents>
     </collection>
   </flows>
@@ -71,11 +76,15 @@
     <collection>
       <documents>
         <attributes name="Temperature" value=""/>
-        <attributes name="Timestamp" value="1517226288"/>
+        <attributes name="Timestamp" value="29/1/2018 12:44:48"/>
+        <attributes name="DeviceId" value="1"/>
+        <attributes name="Humidity" value="58"/>
       </documents>
       <documents>
         <attributes name="Temperature"/>
-        <attributes name="Timestamp" value="1517226289"/>
+        <attributes name="Timestamp" value="29/1/2018 12:44:49"/>
+        <attributes name="DeviceId" value="2"/>
+        <attributes name="Humidity" value="12"/>
       </documents>
     </collection>
   </flows>
