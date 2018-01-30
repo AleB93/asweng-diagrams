@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data_Analysis:Pipeline xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Data_Analysis="http://www.example.org/data_Analysis">
+  <tasks xsi:type="Data_Analysis:DataCollectionTask" toFlow="//@flows.0" executionTimestamp="1517224011" isExecuted="true" name="DataCollection" endpoint="" condition="//@conditions.0">
+    <source xsi:type="Data_Analysis:Database" url="" port="27017" user="root" pwd="1234"/>
+    <inputSchema>
+      <schemaAttributes name="Temperature"/>
+      <schemaAttributes name="DeviceId"/>
+      <schemaAttributes name="Timestamp"/>
+      <schemaAttributes name="Coordinates"/>
+      <schemaAttributes name="Humidity"/>
+    </inputSchema>
+  </tasks>
+  <tasks xsi:type="Data_Analysis:DataCleaning" toFlow="//@flows.1" executionTimestamp="1517224012" isExecuted="true">
+    <operations xsi:type="Data_Analysis:FormatData"/>
+  </tasks>
+  <tasks xsi:type="Data_Analysis:DataAnalysisTask" toFlow="//@flows.2" executionTimestamp="1517224013" isExecuted="true">
+    <category xsi:type="Data_Analysis:Classification"/>
+    <Analysis/>
+  </tasks>
+  <tasks xsi:type="Data_Analysis:DataVisualizationTask" toFlow="//@flows.3" executionTimestamp="1517224014" isExecuted="true">
+    <visualElements xsi:type="Data_Analysis:Graph">
+      <elements xsi:type="Data_Analysis:Node" x="1517226288" y="10" toEdge="//@tasks.3/@visualElements.0/@elements.1"/>
+      <elements xsi:type="Data_Analysis:Edge" toNode="//@tasks.3/@visualElements.0/@elements.2"/>
+      <elements xsi:type="Data_Analysis:Node" x="1517226289" y="38"/>
+    </visualElements>
+  </tasks>
+  <tasks xsi:type="Data_Analysis:ExportDataTask" executionTimestamp="1517224015" isExecuted="true"/>
+  <flows toTask="//@tasks.1">
+    <collection>
+      <documents>
+        <attributes name="Temperature" value="10"/>
+        <attributes name="DeviceId" value="1"/>
+        <attributes name="Timestamp" value="1517226288"/>
+        <attributes name="Humidity" value="58"/>
+        <attributes name="Coordinates" value="45.6984251, 9.0365349"/>
+      </documents>
+      <documents>
+        <attributes name="Temperature" value="38"/>
+        <attributes name="DeviceId" value="2"/>
+        <attributes name="Timestamp" value="1517226289"/>
+        <attributes name="Humidity" value="12"/>
+        <attributes name="Coordinates" value="45.6984251, 9.0365349"/>
+      </documents>
+    </collection>
+  </flows>
+  <flows toTask="//@tasks.2">
+    <collection>
+      <documents>
+        <attributes name="Timestamp" value="1517226288"/>
+        <attributes name="Temperature" value="10"/>
+      </documents>
+      <documents>
+        <attributes name="Timestamp" value="1517226289"/>
+        <attributes name="Temperature" value="38"/>
+      </documents>
+    </collection>
+  </flows>
+  <flows toTask="//@tasks.3">
+    <collection>
+      <documents>
+        <attributes name="Temperature" value="10"/>
+        <attributes name="Timestamp" value="1517226288"/>
+      </documents>
+      <documents>
+        <attributes name="Temperature" value="38"/>
+        <attributes name="Timestamp" value="1517226289"/>
+      </documents>
+    </collection>
+  </flows>
+  <flows toTask="//@tasks.4">
+    <collection>
+      <documents>
+        <attributes name="Temperature" value=""/>
+        <attributes name="Timestamp" value="1517226288"/>
+      </documents>
+      <documents>
+        <attributes name="Temperature"/>
+        <attributes name="Timestamp" value="1517226289"/>
+      </documents>
+    </collection>
+  </flows>
+  <conditions>
+    <expressions xsi:type="Data_Analysis:OrExp" name="Or" valueconditions="//@conditions.0/@valueConditions.0 //@conditions.0/@valueConditions.1"/>
+    <valueConditions xsi:type="Data_Analysis:Lte" attribute="TemperatureLte" value="20"/>
+    <valueConditions xsi:type="Data_Analysis:Gte" attribute="TemperatureGte" value="35"/>
+  </conditions>
+</Data_Analysis:Pipeline>
